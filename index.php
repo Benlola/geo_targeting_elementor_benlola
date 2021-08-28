@@ -3,7 +3,7 @@
 Plugin Name: Geo Targeting Elementor by Benlola
 Plugin URI: https://github.com/Benlola/geo_targeting_elementor_benlola
 Description: Geo Targeting a Elementor element or any custom block in HTML
-Version: 1.0.0
+Version: 1.1.0
 Author: Benlola Team
 Author URI: https://benlola.com/
 License: GPLv2 or later
@@ -44,10 +44,15 @@ function geo_targeting_elementor_benlola() {
 	}
 
 	//Custom styles
+	//Show something in this country
 	echo '<style>';
 	echo "[class*=' geo_visible_']:not(.geo_visible_$country_code) {";
 	echo "display: none!important;";
 	echo "}";
+	//Hide something in this country
+	echo ".geo_hidden_$country_code{";
+	echo "display: none!important;";
+	echo "}";
 	echo '</style>';
-}
+};
 ?>
