@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Geo Targeting Elementor by Benlola
-Plugin URI: https://benlola.com/
+Plugin URI: https://github.com/Benlola/geo_targeting_elementor_benlola
 Description: Geo Targeting a Elementor element or any custom block in HTML
 Version: 1.0.0
 Author: Benlola Team
